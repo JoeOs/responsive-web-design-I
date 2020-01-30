@@ -119,6 +119,10 @@ li {
   color: gray;
 }
 
+a {
+    box-sizing: border-box;
+}
+
 .logo {
     display: flex;
     justify-content: center;
@@ -166,8 +170,8 @@ button {
     flex-direction: column;
     align-items: center;
     width: 100%;
-    border-bottom: 1px solid black;
-    border-top: 1px solid black;
+    border-bottom: 2px solid black;
+    border-top: 2px solid black;
 }
 
 .top-content {
@@ -178,17 +182,18 @@ button {
 
 .middle-content {
 	display: flex;
-	justify-content: space-around;
+    justify-content: space-around;
+    margin: 30px 0px;
 }
 
 .features {
 	width: 32%;
-	box-sizing: border-box;
+    display: block;
 }
 
 .about {
 	width: 32%;
-	box-sizing: border-box;	
+    display: block;
 }
 
 .second-img {
@@ -197,26 +202,29 @@ button {
 }
 
 .bottom-content {
-
 	display: flex;
 	align-items: center;
-	justify-content: space-between;
+    justify-content: space-between;
+    margin: 30px 60px;
 	
 }
 
 .services {
-	width: 50%;
-	box-sizing: border-box;
+    width: 50%;
+    display: block;
+    margin: 10px;
 }
 
 .product {
 	width: 50%;
-	box-sizing: border-box;	
+    display: block;
+    margin: 10px;
 }
 
 .vision {
 	width: 50%;
-	box-sizing: border-box;	
+    display: block;
+    margin: 10px;	
 }
 
 .contact {
@@ -237,7 +245,7 @@ footer p {
 	margin-top: 50px;
 }
 
-@media(max-width: 800px) {
+@media(max-width: 819px) {
     #container {
         display: flex;
         flex-direction: column;
@@ -271,7 +279,11 @@ footer p {
         font-family: 'Titillium Web', sans-serif;
     }
     nav a {
-        margin: auto;
+        margin: 32px;
+    }
+
+    a {
+        box-sizing: border-box;
     }
     
     ul {
@@ -286,9 +298,13 @@ footer p {
     
     .navigation a{
     
-        margin: 50px;
+        margin: 45px;
       text-decoration: none;
       color: gray;
+    }
+
+    .button {
+        position: unset;
     }
     
     .logo2 {
@@ -298,4 +314,103 @@ footer p {
         padding: 10px;
         margin: 10px;
     }
+    @media(max-width: 500px) {
+
+        #container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+          }
+      
+          .logo {
+              display: flex;
+          }
+        
+          #container header nav {
+              margin: auto;
+            flex-direction: column;
+          }
+        
+
+        a {
+            box-sizing: border-box;
+        }
+        
+        ul {
+            display: flex;
+            flex-direction: row;
+        }
+        
+        li {
+            display: flex;
+            justify-content: space-between;
+        }
+        
+        .navigation a{
+            display: block;
+            margin: 50px;
+            padding: 0px;
+          text-decoration: none;
+          color: gray;
+        }
     
+        .button {
+            position: unset;
+        }
+        
+        .logo2 {
+            display: none;
+            justify-content: center;
+            height: 50%;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        .middle-content {
+            display: flex;
+            flex-direction: column;
+            margin: 30px 0px;
+        }
+
+        .features {
+            width: 100%;
+            display: block;
+        }
+        
+        .about {
+            width: 100%;
+            display: block;
+        }
+        
+        .second-img {
+            width: 100%;
+            margin: 15px;
+        }
+        
+        .bottom-content {
+            display: flex;
+            flex-direction: column;
+            margin: 30px 0px;
+            
+        }
+        
+        .services {
+            width: 100%;
+            display: block;
+            margin: 10px;
+        }
+        
+        .product {
+            width: 100%;
+            display: block;
+            margin: 10px;
+        }
+        
+        .vision {
+            width: 100%;
+            display: block;
+            margin: 10px;	
+        }
+    }
+    
+}
