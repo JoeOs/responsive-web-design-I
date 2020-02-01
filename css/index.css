@@ -132,12 +132,9 @@ a {
 }
 
 .title {
-
-
-	display: inline-block;
+    display: flex;
+    flex-wrap: wrap;
 	position: relative;
-	left: 200px;
-	bottom: 50px;
 	width: 400px;
 	height: 275px;
 	padding: 20px;
@@ -176,8 +173,14 @@ button {
 
 .top-content {
 	display: flex;
-	justify-content: center;
+	align-items: center;
 	flex-direction: row;
+}
+
+.innovate {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .middle-content {
@@ -345,9 +348,21 @@ footer p {
             display: flex;
             justify-content: space-between;
         }
-        
+
+        .top-content{
+
+        }
+
+        .innovate {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+
+        }       
         .navigation a{
-            display: block;
+            display: flex;
+            justify-content: center;
             margin: 50px;
             padding: 0px;
           text-decoration: none;
