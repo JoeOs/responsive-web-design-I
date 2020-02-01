@@ -327,6 +327,7 @@ footer p {
       
           .logo {
               display: flex;
+              order: -1;
           }
         
           #container header nav {
